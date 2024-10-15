@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Form Pendataaan Kesehatan</title>   
+</head>
+<body>
+
+    <!-- FORM DESIGN -->
+    <section class="form-section">
+        <div>  
+            <h2>PENDATAAN KESEHATAN MAHASISWA FTEN</h2>
+            <div>
+                <form>
+    
+                    <div>
+                        <label for="nama">Nama Lengkap:</label>
+                        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+                    </div>
+
+                    <div>
+                        <label for="nim">NIM:</label>
+                        <input type="text" id="NIM" name="NIM" placeholder="Masukkan NIM" required>
+                    </div>
+
+                    <div>
+                        <label for="jenis-kelamin">Jenis Kelamin:</label>
+                        <div class="jenis-kelamin">
+                            <div class="laki-laki">
+                                <input type="radio" id="Laki-laki" name="Laki-laki"> Laki-laki
+                            </div>
+                            <div class="perempuan">
+                                <input type="radio" id="perempuan" name="perempuan"> Perempuan
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="program_studi">Program Studi:</label>
+                        <select name="program_studi" id="program_studi" required>
+                            <option value="">Pilih Jurusan</option>
+                            <option value="Teknik_Informatika">Teknik Informatika</option>
+                            <option value="Sistem_Informasi">Sistem Informasi</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="tanggal_lahir">Tanggal Lahir:</label>
+                        <input type="date" id="tanggal_lahir" name="tanggal_lahir" placeholder="tanggal_lahir" required>
+                    </div>
+
+                    <div>
+                        <label for="alamat">Alamat:</label>
+                        <textarea name="alamat" id="alamat" placeholder="Masukkan Alamat" required></textarea>
+                    </div>
+
+                    <div>
+                        <label for="telp">Nomor Handphone:</label>
+                        <input type="text" id="telp" name="telp" placeholder="Masukkan No Handphone" required>
+                    </div>
+
+                    <div>
+                        <label for="email">Email:</label>
+                        <input type="email" id="emal" name="email" placeholder="Masukkan email" required>
+                    </div>
+
+                    <div class="riwayat_kesehatan">
+                        <h4>Riwayat Kesehatan Pribadi</h4>
+                        <div class="pertanyaan">
+                            <label for="pertanyaan1">
+                                Apakah memiliki kondisi kesehatan kronis?
+                            </label>
+                            <input type="text" name="pertanyaan1" id="pertanyaan1" placeholder="contoh: diabetes, dsb." required>
+                        </div>
+
+                        <div class="pertanyaan">
+                            <label for="pertanyaan">
+                                Apakah memiliki alergi?
+                            </label>
+                            <input type="text" name="pertanyaan2" id="pertanyaan2" placeholder="contoh: punya, alergi ..." required>
+                        </div>
+
+                        <div class="pertanyaan">
+                            <label for="pertanyaan3">
+                                Gangguan Mental yang dialami?
+                            </label>
+                                <select name="pertanyaan3" id="pertanyaan3" required>
+                                    <option value="">Pilihan:</option>
+                                    <option value="Kecemasan">Kecemasan:</option>
+                                    <option value="Depresi">Depresi:</option>
+                                </select>
+                        </div>      
+                    </div>
+
+                    <input type="submit" class="submit" value="Submit">
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER DESIGN -->
+
+    <footer>
+        <div class="footer-text">
+            <h5>ITPLN HEALTH CARE</h5>
+            <div>
+                <p>Ambis boleh, kesehatan nomor 1</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
